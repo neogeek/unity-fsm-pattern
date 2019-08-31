@@ -9,7 +9,7 @@ using UnityEngine;
 public class SampleController : MonoBehaviour
 {
 
-    public enum STATE
+    public enum State
     {
 
         Playing,
@@ -19,9 +19,9 @@ public class SampleController : MonoBehaviour
     }
 
     [SerializeField]
-    private STATE _state = STATE.Playing;
+    private State _state = State.Playing;
 
-    public STATE state
+    public State state
     {
         get => _state;
         private set
@@ -41,11 +41,11 @@ public class SampleController : MonoBehaviour
 
     private void RunStateSwitch()
     {
-        if (state.Equals(STATE.Playing))
+        if (state.Equals(State.Playing))
         {
             StatePlayingSwitch();
         }
-        else if (state.Equals(STATE.Paused))
+        else if (state.Equals(State.Paused))
         {
             StatePausedSwitch();
         }
@@ -54,11 +54,11 @@ public class SampleController : MonoBehaviour
     private void RunStateLoop()
     {
 
-        if (state.Equals(STATE.Playing))
+        if (state.Equals(State.Playing))
         {
             StatePlayingLoop();
         }
-        else if (state.Equals(STATE.Paused))
+        else if (state.Equals(State.Paused))
         {
             StatePausedLoop();
         }
