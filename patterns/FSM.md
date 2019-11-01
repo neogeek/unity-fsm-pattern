@@ -1,4 +1,4 @@
-# Unity FSM (Finite State Machine) Pattern
+# FSM (Finite State Machine) Pattern
 
 ## Example
 
